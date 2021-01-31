@@ -1,0 +1,127 @@
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+
+#frontpage{
+    background-image:url(./img/Background1.png);
+    height:100vh;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+}
+
+.navbar{
+    display:flex;
+    flex-direction:row;
+    box-shadow: 3px 3px 10px rgb(251, 247, 247);
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(1,0,0,1) 0%, rgba(8,22,54,1) 32%, rgba(11,78,231,1) 100%);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content:space-between;
+    align-items:center;
+    margin:0px;
+}
+.navbar > h1{
+    font-size:2rem;
+    text-transform:uppercase;
+    font-family: 'Trebuchet MS', Calibri, 'Treb';
+    padding:10px 20px;
+}
+ul{
+    display:flex;
+    justify-content:center;
+   
+}
+ul li{
+    margin:10px 50px;
+    font-size:2rem;
+    list-style: none;
+    
+    padding:10px 20px;
+    
+    transition:.4s ease-in-out;
+    transform:translateX(0px);
+}
+ul li a {
+    color:aliceblue;
+    text-decoration: none;
+}
+
+ul li:hover {
+    /* border-bottom:1px solid rgb(255, 255, 255); */
+    color:rgb(126, 126, 126);
+
+    transform:translateX(10px);
+    transition:.4s ease;
+}
+
+ul li:hover a{
+    color:rgb(7, 255, 201);
+    
+    text-decoration: underline;
+
+
+}
+.main{
+    display:flex;
+    flex-direction: column;
+   align-items: center;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mainn{
+    position: absolute;
+    left: 10vw;
+    
+    font-family:Arial, Helvetica, sans-serif;
+    top:40vh;
+    text-align: center;
+}
+
+.mainn >h1{
+    font-size:3.5rem;
+    /* text-decoration: underline;  */
+    
+    padding:10px;
+    border-radius: 45px;
+    text-shadow: 2px 2px 10px rgb(31, 30, 30);
+    box-shadow:1px 1px 5px rgb(71, 71, 71) , -1px -1px 4px rgb(75, 75, 75);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    
+}
+
+.mainn >p{
+    font-family:'Courier New', Courier, monospace;
+    font-size:2rem;
+    margin-bottom: 60px;
+    color:rgb(83, 163, 255);
+
+}
+
+
+.mainn > a{
+    text-decoration:none;
+    color:white;
+    padding:20px 30px;
+    /* border:2px solid rgb(241, 241, 241); */
+    border-radius: 30px;
+    transform:translateX(0px);
+    transition:.8s ;
+    box-shadow: 1px 1px 5px white , -1px -1px 4px white;
+    font-weight: bold;
+}
+
+.mainn > a:hover{ 
+    /* text-decoration:underline; */
+    opacity: .7;
+    background-color:white;
+    transform:translateX(10px);
+    transition:.8s all; 
+    color:rgb(255, 0, 0);
+}
+
