@@ -43,7 +43,7 @@ ul li{
     
     padding:10px 20px;
     
-    transition:.4s ease-in-out;
+    transition:.7s ease-in-out;
     transform:translateX(0px);
 }
 ul li a {
@@ -56,11 +56,11 @@ ul li:hover {
     color:rgb(126, 126, 126);
 
     transform:translateX(10px);
-    transition:.4s ease;
+    transition:.7s ease;
 }
 
 ul li:hover a{
-    color:rgb(7, 255, 201);
+    color:rgb(249, 255, 254);
     
     text-decoration: underline;
 
@@ -91,15 +91,25 @@ ul li:hover a{
     text-shadow: 2px 2px 10px rgb(31, 30, 30);
     box-shadow:1px 1px 5px rgb(71, 71, 71) , -1px -1px 4px rgb(75, 75, 75);
     margin-bottom: 40px;
+    background:transparent;
     text-transform: uppercase;
+    transition:.4s;
     
+}
+.main:hover .mainn > h1{
+     background: rgb(12,129,235);
+     background: linear-gradient(90deg, rgba(12,129,235,1) 2%, rgba(11,231,214,1) 72%);
+     box-shadow:1px 1px 5px rgb(221, 221, 221) , -1px -1px 4px rgb(221, 221, 221);
+
+    transition:.4;
+
 }
 
 .mainn >p{
     font-family:'Courier New', Courier, monospace;
     font-size:2rem;
     margin-bottom: 60px;
-    color:rgb(83, 163, 255);
+    color:rgb(253, 254, 255);
 
 }
 
