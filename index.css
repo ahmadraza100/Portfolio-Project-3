@@ -3,6 +3,8 @@
     padding:0;
     box-sizing: border-box;
     scroll-behavior:smooth;
+    --color :black;
+    --color2:rgb(39, 39, 39);
 }
 
 #frontpage{
@@ -11,33 +13,49 @@
     width:100%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     color:white;
 }
 
 .navbar{
     display:flex;
     flex-direction:row;
-    box-shadow: 3px 3px 10px rgb(251, 247, 247);
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(1,0,0,1) 0%, rgba(8,22,54,1) 32%, rgba(11,78,231,1) 100%);
+    box-shadow: 3px 3px 10px rgb(110, 110, 110);
+    
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     justify-content:space-between;
     align-items:center;
-    margin:0px;
+    padding:10px 0px 0px 0px;
+    
 }
 .navbar > h1{
-    font-size:2rem;
+    font-size:3rem;
     text-transform:uppercase;
     font-family: 'Trebuchet MS', Calibri, 'Treb';
     padding:10px 20px;
+    transform:translateX(0px);
+    transition:.5s ease;
+    color:black;
+    
+    
 }
+
+.navbar:hover h1{
+
+    color:rgb(65, 251, 211);
+    transform:translateX(30px);
+    transition:.5s ease;
+   
+
+}
+
 ul{
     display:flex;
     justify-content:center;
    
 }
 ul li{
-    margin:10px 50px;
+    margin:10px 30px;
     font-size:2rem;
     list-style: none;
     
@@ -47,8 +65,11 @@ ul li{
     transform:translateX(0px);
 }
 ul li a {
-    color:aliceblue;
+    color:rgb(47, 47, 47);
     text-decoration: none;
+    
+    text-transform: uppercase;
+    
 }
 
 ul li:hover {
@@ -60,7 +81,7 @@ ul li:hover {
 }
 
 ul li:hover a{
-    color:rgb(249, 255, 254);
+    color:rgb(49, 49, 49);
     
     text-decoration: underline;
 
@@ -85,22 +106,26 @@ ul li:hover a{
 .mainn >h1{
     font-size:3.5rem;
     /* text-decoration: underline;  */
+    background: rgb(12,129,235);
+     background: linear-gradient(90deg, rgba(12,129,235,1) 2%, rgba(11,231,214,1) 72%);
     
     padding:10px;
     border-radius: 45px;
-    text-shadow: 2px 2px 10px rgb(31, 30, 30);
-    box-shadow:1px 1px 5px rgb(71, 71, 71) , -1px -1px 4px rgb(75, 75, 75);
+    text-shadow: 2px 2px 10px rgb(126, 126, 126);
+    box-shadow: 3px 3px 10px rgb(70, 70, 70);
     margin-bottom: 40px;
-    background:transparent;
+    
     text-transform: uppercase;
     transition:.4s;
+    color:rgb(255, 249, 249);
     
 }
 .main:hover .mainn > h1{
      background: rgb(12,129,235);
-     background: linear-gradient(90deg, rgba(12,129,235,1) 2%, rgba(11,231,214,1) 72%);
-     box-shadow:1px 1px 5px rgb(221, 221, 221) , -1px -1px 4px rgb(221, 221, 221);
-
+     background: linear-gradient(90deg, rgb(49, 38, 109) 2%, rgba(11,231,214,1) 72%);
+     text-shadow: 2px 2px 10px rgb(29, 29, 29);
+     box-shadow: 3px 3px 10px rgb(31, 31, 31);
+     color:aliceblue;
     transition:.4;
 
 }
@@ -109,29 +134,178 @@ ul li:hover a{
     font-family:'Courier New', Courier, monospace;
     font-size:2rem;
     margin-bottom: 60px;
-    color:rgb(253, 254, 255);
+    color:rgb(45, 46, 46);
+    font-weight: bold;
 
 }
 
 
 .mainn > a{
     text-decoration:none;
-    color:white;
-    padding:20px 30px;
-    /* border:2px solid rgb(241, 241, 241); */
+    color:rgb(255, 255, 255);
+    padding:20px 40px;
+    border:0.5px solid rgb(46, 45, 45);
     border-radius: 30px;
+    /* background-color: rgb(0, 247, 255); */
     transform:translateX(0px);
-    transition:.8s ;
-    box-shadow: 1px 1px 5px white , -1px -1px 4px white;
+    transition:.8s all;
+
+    box-shadow: 1px 1px 5px rgb(71, 71, 71) , -1px -1px 4px rgb(117, 115, 115);
     font-weight: bold;
+    background-color:rgb(39, 39, 38);
 }
 
 .mainn > a:hover{ 
     /* text-decoration:underline; */
-    opacity: .7;
-    background-color:white;
-    transform:translateX(10px);
+    
+    background-color:rgb(253, 253, 249);
+    transform:translateX(30px);
     transition:.8s all; 
-    color:rgb(255, 0, 0);
+    color:rgb(12, 11, 11);
 }
 
+
+
+
+#work{
+
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    width:100%;
+    background-image: url(./img/Untitled.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+
+}
+.about{
+    
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:50px;
+    flex-direction: column;
+    text-align:center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width:80%;
+
+    
+   
+
+}
+.content{
+    margin-bottom: 10px;
+}
+.content >h2{
+    font-size:3rem;
+}
+.content >p{
+    width:70vw;
+    font-size:1.4rem;
+}
+
+
+
+.skills{
+    display:flex;
+
+}
+.skill{
+    margin:40px 40px;
+  
+    padding:40px 10px;
+    background-color: transparent;
+    transition:.7s;
+
+    
+}
+.head{
+    background: rgb(12,129,235);
+    background: linear-gradient(90deg, rgba(12,129,235,1) 2%, rgba(231,11,100,1) 72%);
+    border-radius:40px 0px 40px 0px;
+    box-shadow: 5px 5px 10px rgb(109, 108, 108) ,  -5px -4px 10px rgb(54, 54, 54);
+    padding:70px 0px;
+    color:white;
+    
+}
+
+.disc > p{
+    
+    color:white;
+    transform: translateY(-5vh);
+    opacity: 0;
+    transition:.6s all;
+    padding:10px;
+}
+.skill:hover .disc > p{
+    color:white;
+    transform: translateY(0vh);
+    opacity: 1;
+    transition:.6s all;
+    padding:10px 10px;
+}
+.skill:hover {
+    background: rgb(12,129,235);
+    background: linear-gradient(90deg, rgba(12,129,235,1) 2%, rgba(231,11,100,1) 72%);
+    border-radius:20px;
+    box-shadow: 5px 5px 10px rgb(109, 108, 108) ,  -5px -4px 10px rgb(54, 54, 54);
+    padding:30px 10px;
+    transition:.7s;
+    
+}
+.skill:hover .head{
+    background: transparent;
+    color:white;
+    
+    border-radius:20px;
+    box-shadow: 0px 0px 0px rgb(109, 108, 108) ,  -0px -0px 0px rgb(54, 54, 54);
+    padding:40px 40px;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1370px){
+    #frontpage {
+        background-image: url(./img/Background1.png);
+        height: 100vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+        background-position: center center;
+        color: white;
+    }
+    ul li {
+        margin: 10px 6px;
+        font-size: 1rem;
+        list-style: none;
+        padding: 10px 5px;
+        transition: .7s ease-in-out;
+        transform: translateX(0px);
+    }
+    .navbar > h1 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-family: 'Trebuchet MS', Calibri, 'Treb';
+        padding: 10px 20px;
+        transform: translateX(0px);
+        transition: .5s ease;
+        color: black;
+    }
+    .mainn {
+        position: absolute;
+        left: 0vw;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 40vh;
+        text-align: center;
+        margin: 10px 50px;
+    }
+}
